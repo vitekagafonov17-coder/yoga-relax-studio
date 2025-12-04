@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на пробный урок | Студия йоги "Relax"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-spa"></i>
+                    <span>Relax</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="instructors.html">Инструкторы</a></li>
+                    <li><a href="trial-lesson.html" class="active">Пробный урок</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Запись на пробный урок</h1>
+                <p>Попробуйте первую бесплатную практику в нашей студии</p>
+            </div>
+        </section>
+
+        <section class="trial-lesson">
+            <div class="container">
+                <div class="trial-content">
+                    <div class="trial-info">
+                        <h2>Почему стоит попробовать?</h2>
+                        <ul class="trial-benefits">
+                            <li><i class="fas fa-check-circle"></i> Первое занятие - бесплатно</li>
+                            <li><i class="fas fa-check-circle"></i> Оцените атмосферу студии и качество преподавания</li>
+                            <li><i class="fas fa-check-circle"></i> Получите рекомендации по выбору направления йоги</li>
+                            <li><i class="fas fa-check-circle"></i> Познакомитесь с инструктором и другими участниками</li>
+                            <li><i class="fas fa-check-circle"></i> Узнаете о своих возможностях и ограничениях</li>
+                        </ul>
+                        
+                        <div class="trial-notes">
+                            <h3>Что взять с собой на занятие:</h3>
+                            <ul>
+                                <li>Удобную одежду, не сковывающую движения</li>
+                                <li>Бутылку с водой</li>
+                                <li>Полотенце (можно арендовать в студии)</li>
+                                <li>Сменную обувь или носки</li>
+                            </ul>
+                            <p class="note">Всё необходимое оборудование (коврики, блоки, ремни) предоставляется студией бесплатно.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trial-form-container">
+                        <div class="form-header">
+                            <h2>Заполните форму для записи</h2>
+                            <p>Мы свяжемся с вами в течение 24 часов для подтверждения времени</p>
+                        </div>
+                        
+                        <form id="trial-lesson-form" class="trial-form">
+                            <div class="form-group">
+                                <label for="name">ФИО *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lesson-type">Тип занятия *</label>
+                                <select id="lesson-type" name="lesson-type" required>
+                                    <option value="" disabled selected>Выберите тип занятия</option>
+                                    <option value="group">Групповое занятие</option>
+                                    <option value="individual">Индивидуальное занятие</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="yoga-style">Направление йоги</label>
+                                <select id="yoga-style" name="yoga-style">
+                                    <option value="" selected>Не знаю, нужна консультация</option>
+                                    <option value="hatha">Хатха йога</option>
+                                    <option value="ashtanga">Аштанга йога</option>
+                                    <option value="vinyasa">Виньяса флоу</option>
+                                    <option value="yin">Инь йога</option>
+                                    <option value="prenatal">Йога для беременных</option>
+                                    <option value="senior">Йога 50+</option>
+                                    <option value="beginners">Йога для начинающих</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferred-date">Предпочтительная дата *</label>
+                                <input type="date" id="preferred-date" name="preferred-date" required min="2025-05-01">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferred-time">Предпочтительное время *</label>
+                                <select id="preferred-time" name="preferred-time" required>
+                                    <option value="" disabled selected>Выберите время</option>
+                                    <option value="morning">Утро (7:00 - 10:00)</option>
+                                    <option value="day">День (11:00 - 16:00)</option>
+                                    <option value="evening">Вечер (18:00 - 21:30)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience">Опыт занятий йогой</label>
+                                <select id="experience" name="experience">
+                                    <option value="none">Нет опыта</option>
+                                    <option value="beginner">Начинающий (менее 1 года)</option>
+                                    <option value="intermediate">Средний уровень (1-3 года)</option>
+                                    <option value="advanced">Продвинутый уровень (более 3 лет)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="health-notes">Особенности здоровья (если есть)</label>
+                                <textarea id="health-notes" name="health-notes" rows="3" placeholder="Например, травмы, хронические заболевания, беременность и т.д."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="comments">Дополнительные комментарии</label>
+                                <textarea id="comments" name="comments" rows="3" placeholder="Ваши пожелания или вопросы"></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Я согласен(а) на обработку персональных данных *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">Отправить заявку</button>
+                        </form>
+                        
+                        <div id="form-success" class="form-success hidden">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Спасибо за вашу заявку!</h3>
+                            <p>Мы получили ваши данные и свяжемся с вами в течение 24 часов для подтверждения записи на пробный урок.</p>
+                            <p>Если у вас есть срочные вопросы, вы можете позвонить нам по телефону <strong>+7 (495) 123-45-67</strong>.</p>
+                            <a href="index.html" class="btn btn-secondary">Вернуться на главную</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-spa"></i>
+                        <span>Relax</span>
+                    </a>
+                    <p class="footer-text">Студия йоги "Relax" &copy; <span id="current-year">2025</span>. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="instructors.html">Инструкторы</a></li>
+                        <li><a href="trial-lesson.html">Пробный урок</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в социальных сетях</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

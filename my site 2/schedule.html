@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание занятий | Студия йоги "Relax"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-spa"></i>
+                    <span>Relax</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html" class="active">Расписание</a></li>
+                    <li><a href="instructors.html">Инструкторы</a></li>
+                    <li><a href="trial-lesson.html">Пробный урок</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Расписание занятий</h1>
+                <p>Актуальное расписание на <span id="current-month-year">Декабрь 2025</span></p>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="container">
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-tab="group">Групповые занятия</button>
+                    <button class="tab-btn" data-tab="individual">Индивидуальные занятия</button>
+                </div>
+
+                <div class="tab-content active" id="group">
+                    <div class="schedule-note">
+                        <p><i class="fas fa-info-circle"></i> Групповые занятия проходят по предварительной записи. Максимальное количество участников - 10 человек.</p>
+                    </div>
+                    
+                    <div class="schedule-table-container">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Время</th>
+                                    <th>Понедельник</th>
+                                    <th>Вторник</th>
+                                    <th>Среда</th>
+                                    <th>Четверг</th>
+                                    <th>Пятница</th>
+                                    <th>Суббота</th>
+                                    <th>Воскресенье</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-slot">7:00 - 8:30</td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Хатха йога</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Утренняя практика</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Хатха йога</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Утренняя практика</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Хатха йога</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для начинающих</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для начинающих</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">9:00 - 10:30</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для беременных</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для беременных</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для беременных</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">11:00 - 12:30</td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога 50+</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для позвоночника</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога 50+</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога для позвоночника</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Йога 50+</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">18:00 - 19:30</td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Аштанга йога</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Инь йога</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Аштанга йога</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Инь йога</span>
+                                            <span class="instructor">Елена</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Аштанга йога</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">20:00 - 21:30</td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Виньяса флоу</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Медитация</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Виньяса флоу</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Медитация</span>
+                                            <span class="instructor">Ксения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="class-info">
+                                            <span class="class-name">Виньяса флоу</span>
+                                            <span class="instructor">Анна</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="individual">
+                    <div class="schedule-note">
+                        <p><i class="fas fa-info-circle"></i> Индивидуальные занятия проводятся по предварительной договоренности с инструктором. Пожалуйста, свяжитесь с нами для согласования времени.</p>
+                    </div>
+                    
+                    <div class="individual-info">
+                        <h3>Индивидуальные занятия доступны:</h3>
+                        <ul>
+                            <li>В любое время с 7:00 до 22:00 в будние дни</li>
+                            <li>С 9:00 до 20:00 в выходные дни</li>
+                            <li>Продолжительность занятия: 60 или 90 минут</li>
+                            <li>Место проведения: студия или на дому (по договоренности)</li>
+                        </ul>
+                        
+                        <div class="individual-benefits">
+                            <h3>Преимущества индивидуальных занятий:</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit">
+                                    <i class="fas fa-user-check"></i>
+                                    <h4>Персональный подход</h4>
+                                    <p>Программа строится с учетом ваших целей, физических возможностей и пожеланий.</p>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h4>Гибкий график</h4>
+                                    <p>Вы сами выбираете удобное время и периодичность занятий.</p>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-bullseye"></i>
+                                    <h4>Быстрый результат</h4>
+                                    <p>Максимальная эффективность благодаря полному вниманию инструктора.</p>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-home"></i>
+                                    <h4>Возможность занятий на дому</h4>
+                                    <p>Инструктор может приехать к вам для проведения занятия.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-section">
+                            <p>Для записи на индивидуальное занятие свяжитесь с нами по телефону <strong>+7 (421) 723-45-67</strong> или заполните форму на странице <a href="trial-lesson.html">"Пробный урок"</a>, указав в комментарии, что вас интересует индивидуальный формат.</p>
+                            <a href="trial-lesson.html" class="btn btn-primary">Записаться на индивидуальное занятие</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-spa"></i>
+                        <span>Relax</span>
+                    </a>
+                    <p class="footer-text">Студия йоги "Relax" &copy; <span id="current-year">2025</span>. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="instructors.html">Инструкторы</a></li>
+                        <li><a href="trial-lesson.html">Пробный урок</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в социальных сетях</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
